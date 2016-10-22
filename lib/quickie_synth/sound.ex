@@ -22,7 +22,7 @@ defmodule QuickieSynth.Sound do
   #   System.cmd(cmd, args)
   # end
   #
-  def run([cmd| args]) do
+  defp run([cmd| args]) do
     System.cmd(cmd, args)
   end
 end
