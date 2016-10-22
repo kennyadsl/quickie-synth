@@ -15,9 +15,18 @@ defmodule QuickieSynth.Sound do
   # This method simply accept/receive a list as argument.
   # Since we are going to use it as cmd, args (first and list of
   # all others list elements) we can use this syntax.
+  #
   # This is equivalent to do:
   #
-  # def run(cmd_and_args_list)
+  # defp run(cmd_and_args_list) do
+  #   cmd = hd(cmd_and_args_list)   # hd get the head of the list
+  #   args = tl(cmd_and_args_list)  # tl get the tail of the list
+  #   System.cmd(cmd, args)
+  # end
+  #
+  # or:
+  #
+  # defp run(cmd_and_args_list)
   #   [cmd| args] = cmd_and_args_list
   #   System.cmd(cmd, args)
   # end
