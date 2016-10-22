@@ -1,24 +1,20 @@
 # QuickieSynth
 
-**TODO: Add description**
+Play sounds with Elixr.
 
-## Installation
+## Requirements
 
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed as:
+Be sure you have [SoX](http://sox.sourceforge.net/sox.html) installed.
+On OSX with Homebrew you can just run:
 
-  1. Add `quickie_synth` to your list of dependencies in `mix.exs`:
+```
+brew install sox
+```
 
-    ```elixir
-    def deps do
-      [{:quickie_synth, "~> 0.1.0"}]
-    end
-    ```
+## Usage
 
-  2. Ensure `quickie_synth` is started before your application:
+Run `iex` and:
 
-    ```elixir
-    def application do
-      [applications: [:quickie_synth]]
-    end
-    ```
-
+```
+QuickieSynth.Sound.play("C")
+```
