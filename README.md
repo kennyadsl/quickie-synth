@@ -1,6 +1,7 @@
 # QuickieSynth
 
 Play sounds with Elixr.
+Based on [elixir sips](http://elixirsips.com/), episode 062.
 
 ## Requirements
 
