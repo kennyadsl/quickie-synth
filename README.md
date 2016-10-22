@@ -18,4 +18,5 @@ Run `iex` and:
 
 ```
 QuickieSynth.Sound.play("C")
+QuickieSynth.Composition.play(500, "AGAGAC")
 ```
