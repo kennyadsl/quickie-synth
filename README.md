@@ -14,9 +14,19 @@ brew install sox
 
 ## Usage
 
-Run `iex` and:
+Run
 
 ```
-QuickieSynth.Sound.play("C")
-QuickieSynth.Composition.play(500, "AGAGAC")
+$ iex -S mix
+
+> QuickieSynth.Sound.play("C")
+> QuickieSynth.Composition.play(500, "AGAGAC")
+```
+
+## Test
+
+Run:
+
+```
+$ mix test
 ```
